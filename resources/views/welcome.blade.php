@@ -17,8 +17,11 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
+                padding: 50px;
             }
         </style>
+
+        @livewireStyles
 
         <script src="{{ asset('js/app.js') }}" defer></script>
         <!-- Styles -->
@@ -26,5 +29,7 @@
     </head>
     <body>
         
+        @livewire('counter')
+        @livewireScripts
     </body>
 </html>
